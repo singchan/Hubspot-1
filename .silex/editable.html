@@ -1,0 +1,299 @@
+<!DOCTYPE html><html lang=""><head><script type="text/javascript" class="silex-json-styles" data-silex-static="">
+    window.silex = window.silex || {}
+    window.silex.data = {"site":{"width":1280},"pages":[{"id":"page-home-page","displayName":"Home Page","link":{"linkType":"LinkTypePage","href":"#!page-home-page"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false}]}</script>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.12">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="https://preprod.silex.me/static/2.11/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://preprod.silex.me/static/2.11/jquery-ui.js" data-silex-static="" data-silex-remove-publish=""></script>
+    <script type="text/javascript" src="https://preprod.silex.me/static/2.11/pageable.js" data-silex-static="" data-silex-remove-publish=""></script>
+    <script type="text/javascript" src="https://preprod.silex.me/static/2.11/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="https://preprod.silex.me/static/2.11/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="https://preprod.silex.me/static/2.11/front-end.css" data-silex-static="">
+
+    <style type="text/css" class="silex-style">.fullwidth {width: 100%;}body.silex-runtime {scroll-behavior: smooth;}html {scroll-behavior: smooth;}</style>
+    <script type="text/javascript" class="silex-script">/*
+ * animation widget from here: https://github.com/silexlabs/Silex/issues/443
+ */
+$(function() {
+	var OFFSET = $('.hero-section, [data-prevent-scale-y]').height() * (1 - silex.scale) / 2 // this is because of the hero section which is not resizeable
+	var win = $(window)
+	var size = {
+		h: win.height()
+		// , w: win.width()
+	}
+	var initial = {
+		h: size.h / silex.scale
+		// , w: size.w / silex.scale
+	}
+	var offset = {
+		h: initial.h - size.h + OFFSET
+		// , w: initial.w - size.w
+	}
+	// this function is used to apply an offset to the detection of the active boundaries of the viewport
+	// this is required when the viewport width is smaller than the website (when Silex scales down the website)
+	function getOffset(el) {
+		var position = $(el).position()
+		var localOffset = {
+			h: offset.h + (position.top * (1-silex.scale))
+			// , w: offset.w + (position.left * (1-silex.scale))
+		}
+		return {
+			top: offset.h
+			, bottom: -offset.h
+			// , left: offset.w
+			// , right: -offset.w
+		}
+	}
+	function getDelay(el) {
+		var $el = $(el);
+		if($el.hasClass('delay100')) return 100;
+		if($el.hasClass('delay200')) return 200;
+		if($el.hasClass('delay300')) return 300;
+		if($el.hasClass('delay400')) return 400;
+		if($el.hasClass('delay500')) return 500;
+		if($el.hasClass('delay600')) return 600;
+		if($el.hasClass('delay700')) return 700;
+		if($el.hasClass('delay800')) return 800;
+		if($el.hasClass('delay900')) return 900;
+		if($el.hasClass('delay1000')) return 1000;
+		return 0;
+	}
+	function getDistance(el) {
+		var $el = $(el);
+		if($el.hasClass('distance0')) return '0px';
+		if($el.hasClass('distance100')) return '100px';
+		if($el.hasClass('distance200')) return '200px';
+		if($el.hasClass('distance500')) return '500px';
+		if($el.hasClass('distance1000')) return '1000px';
+		return '100px';
+	}
+	function getScale(el) {
+		var $el = $(el);
+		if($el.hasClass('scale3_4')) return 3/4;
+		if($el.hasClass('scale2_3')) return 2/3;
+		if($el.hasClass('scale1_2')) return 1/2;
+		if($el.hasClass('scale1_3')) return 1/3;
+		if($el.hasClass('scale1_4')) return 1/4;
+		return 1;
+	}
+	var sr = ScrollReveal({
+		distance: '100px'
+		, reset: false
+	});
+	$('.from-left').each(function() {
+		sr.reveal(this, { origin:  'left', scale: getScale(this), delay: getDelay(this), distance: getDistance(this), viewOffset: getOffset(this)});
+	})
+	$('.from-right').each(function() {
+		sr.reveal(this, { origin:  'right', scale: getScale(this), delay: getDelay(this), distance: getDistance(this), viewOffset: getOffset(this)});
+	})
+	$('.from-top').each(function() {
+		sr.reveal(this, { origin:  'top', scale: getScale(this), delay: getDelay(this), distance: getDistance(this), viewOffset: getOffset(this)});
+	})
+	$('.from-bottom').each(function() {
+		sr.reveal(this, { origin:  'bottom', scale: getScale(this), delay: getDelay(this), distance: getDistance(this), viewOffset: getOffset(this)});
+	})
+})
+
+
+</script>
+    <style class="silex-inline-styles" type="text/css">.body-initial {background-color: rgba(254,255,255,1); position: static;}.silex-id-1478366444112-1 {background-color: rgba(254,255,255,1); min-width: 1000px; position: static; margin-top: -1px;}.silex-id-1478366444112-0 {background-color: transparent; min-height: 9px; position: relative; margin-left: auto; margin-right: auto; display: flex;}.silex-id-1496169913594-59 {min-height: 100px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1474394621033-3 {background-color: rgba(192,192,192,1); min-width: 1000px; position: static; margin-top: -1px; background-image: url(../assets/playa4.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;}.silex-id-1474394621032-2 {background-color: transparent; min-height: 905.5px; position: relative; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; align-items: center; justify-content: center;}.silex-id-1496136970330-0 {width: 781px; top: 106px; left: 229px; min-height: 2px; position: static; margin-top: 100px;}.silex-id-1496148764365-5 {background-color: rgba(255,255,255,1); min-width: 1000px; position: static; margin-top: -1px;}.silex-id-1496148764363-4 {min-height: 702px; position: relative; margin-left: auto; margin-right: auto; display: flex; align-items: center; justify-content: space-between;}.silex-id-1496168536496-34 {background-image: url(../../../../libs/templates/silex-templates/creative/assets/clem-onojeghuo-173078.jpg); background-size: cover; background-position: top center; min-height: 666px; position: relative; margin-left: auto; margin-right: auto;}.silex-id-1617875263486-0 {position: static; background-color: rgba(195,220,230,1);}.silex-id-1617875263487-1 {min-height: 10px; background-color: transparent; position: relative; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; align-items: center;}.silex-id-1617882090030-0 {width: 710px; min-height: 300px; background-color: transparent; position: static; margin-top: 80px; margin-bottom: 150px;}.silex-id-1618932730640-5 {width: 299px; height: 42px; position: static; margin-top: 50px; margin-left: 46px;}.silex-id-1618933327305-6 {width: 110px; height: 110px; position: static; top: 72.6688232421875px; left: 138.00003051757812px;}.silex-id-1618933338114-7 {width: 110px; height: 110px; position: static; top: 209.23333740234375px; left: 631px;}.silex-id-1618933376295-8 {width: 110px; height: 110px; position: static; top: 207px; left: 1046px;}.silex-id-1618933677074-9 {width: 333px; top: 193.3372802734375px; left: 24.999969482421875px; min-height: 2px; position: static; margin-top: 10px;}.silex-id-1619102040111-1 {width: 376px; min-height: 424px; background-color: rgb(255, 255, 255); position: static; top: 135.00247192382812px; left: 59.000030517578125px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-left: 50px;}.silex-id-1619102327508-2 {width: 376px; min-height: 424px; background-color: rgb(255, 255, 255); position: static; top: 135.00247192382812px; left: 59.000030517578125px; display: flex; flex-direction: column; justify-content: center; align-items: center;}.silex-id-1619102327509-4 {width: 333px; min-height: 146px; position: static; margin-top: 10px;}.silex-id-1619102332203-5 {width: 376px; min-height: 424px; background-color: rgb(255, 255, 255); position: static; top: 135.00247192382812px; left: 59.000030517578125px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-right: 50px;}.silex-id-1619102332203-7 {width: 333px; top: 193.3372802734375px; left: 24.999969482421875px; min-height: 2px; position: static; margin-top: 10px;}.silex-id-1619436998719-0 {width: 933px; min-height: 1px; position: static; margin-top: 19px; margin-bottom: 44px;}.silex-id-1619509915720-0 {width: 671px; height: 321.316650390625px; position: static;}.silex-id-1619778107249-5 {width: 835px; min-height: 26px; position: absolute; top: 35.7708740234375px; left: 218px;}.silex-id-1619785274025-6 {position: static;}.silex-id-1619785274026-7 {min-height: 100px; background-color: rgb(255, 255, 255); position: relative; margin-left: auto; margin-right: auto;}@media only screen and (max-width: 480px) {.body-initial {background-color: rgba(255,255,255,1);}.silex-id-1478366444112-0 {min-height: 9px;}.silex-id-1474394621033-3 {top: 473px; left: 0px;}.silex-id-1474394621032-2 {min-height: 478.3507080078125px;}.silex-id-1496136970330-0 {top: 139px; left: 11px; width: 421px; min-height: 11px;}.silex-id-1496148764365-5 {top: 899px; left: 0px;}.silex-id-1496148764363-4 {min-height: 3px;}.silex-id-1617882090030-0 {padding-left: 30px; padding-right: 30px; margin-top: 50px; min-height: 300px; top: 0px; left: 0px; width: 418px; margin-bottom: 80px;}.silex-id-1618932730640-5 {padding-right: 0px; margin-top: 10px; height: 30.437272607478025px; top: 9.359658154273557px; left: 0px; width: 221.2882080078125px;}.silex-id-1618933327305-6 {padding-left: 0px; padding-right: 0px;}.silex-id-1618933338114-7 {padding-left: 0px; padding-right: 0px; height: 110px; top: 0px; left: 0px; width: 110px;}.silex-id-1618933376295-8 {padding-left: 0px; padding-right: 0px; height: 110px; top: 0.000030517578125px; left: 0px; width: 110px;}.silex-id-1618933677074-9 {top: 0px; left: 0px; width: 375px; min-height: 10px;}.silex-id-1619102040111-1 {min-height: 10px; margin-top: 80px;}.silex-id-1619102327508-2 {min-height: 10px; margin-top: 50px;}.silex-id-1619102327509-4 {top: 139px; left: 11px; width: 421px; min-height: 10px;}.silex-id-1619102332203-5 {margin-bottom: 100px; min-height: 10px; margin-top: 50px;}.silex-id-1619102332203-7 {top: 139px; left: 11px; width: 421px; min-height: 10px;}.silex-id-1619436998719-0 {min-height: 10px; top: 0px; left: 0px; width: 478px; margin-bottom: 154px; margin-top: 0px;}.silex-id-1619509915720-0 {height: 183.7545953614794px; top: 0px; left: 0px; width: 354.7326354980469px; margin-top: 82px;}.silex-id-1619778107249-5 {top: NaNpx; padding-top: 9px;}}</style>
+    <title>Landing Page test</title>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1"><style type="text/css" class="silex-style-settings">.website-width {width: 1280px;}@media (min-width: 481px) {.silex-editor {min-width: 1480px;}}</style><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&amp;display=swap" rel="stylesheet" class="silex-custom-font"><link href="../assets/favicon.png" rel="shortcut icon"><meta name="twitter:title" content="Landing Page test"><meta name="og:title" content="Landing Page test"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://github.com/internet2000/Landing-Page-1/assets/thumbnail.jpg"><meta name="og:image" content="https://github.com/internet2000/Landing-Page-1/assets/thumbnail.jpg"><style class="silex-prodotype-style" type="text/css" data-style-id="all-style">h1 {font-weight: normal;}.text-element > .silex-element-content {font-family: 'Montserrat', helvetica, sans-serif; ;text-align: center; letter-spacing: 2px;}p {color: #076460;}a {color: #000000; text-decoration: none;}[data-silex-href] {color: #000000; text-decoration: none;}@media only screen and (max-width: 480px) {.text-element > .silex-element-content {font-size: 23px;}p {}}</style><style class="silex-prodotype-style" type="text/css" data-style-id="nav">.nav.text-element > .silex-element-content {text-align: center;}.nav a {color: #000000; text-decoration: none;}.nav [data-silex-href] {color: #000000; text-decoration: none;}.nav .page-link-active {background-color: #47c1d9;}</style><style class="silex-prodotype-style" type="text/css" data-style-id="header">.header h1 {font-family: 'Montserrat', helvetica, sans-serif; ;font-weight: bold; font-size: 41px; color: #056460; line-height: 1.2; margin-top: 0; margin-bottom: 0;}.header h2 {font-family: 'Montserrat', helvetica, sans-serif; ;font-size: 32px; color: #056460; line-height: 1.4; margin-top: 0;}.header h3 {font-family: 'Montserrat', helvetica, sans-serif; ;font-weight: bolder; font-size: 33px; color: #056460; margin-top: 0;}.header.text-element > .silex-element-content {font-family: 'Noto Sans SC', sans-serif; color: #fff; line-height: 2;}.header p {font-family: 'Montserrat', helvetica, sans-serif; ;letter-spacing: 0.5px;}@media only screen and (max-width: 480px) {.header h1 {font-size: 24px; color: #fff; letter-spacing: 0.2px;}.header h3 {font-size: 21px; letter-spacing: 1px;}.header p {font-size: 18px; line-height: 1.5;}}</style><style class="silex-prodotype-style" type="text/css" data-style-id="style-tiles">.style-tiles h3 {margin-top: 133px;}.style-tiles.text-element > .silex-element-content {}.style-tiles p {}@media only screen and (max-width: 480px) {}</style><style class="silex-prodotype-style" type="text/css" data-style-id="style-cards">.style-cards h2 {color: #4f98a7; line-height: 1.2;}.style-cards h3 {color: #056460;}.style-cards p {color: #4f98a7; line-height: 1.3; letter-spacing: 1.5px;}@media only screen and (max-width: 480px) {.style-cards h2 {font-size: 25px;}.style-cards p {font-size: 19px; line-height: 1.3;}}</style><style class="silex-prodotype-style" type="text/css" data-style-id="style-credit-ik2">.style-credit-ik2 p {font-family: 'Montserrat', helvetica, sans-serif; ;font-weight: 900; font-size: 22px; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0;}@media only screen and (max-width: 480px) {.style-credit-ik2 p {font-size: 11px; margin-top: 0; margin-bottom: 0;}}</style><!-- Silex HEAD tag do not remove --><script src="https://unpkg.com/scrollreveal"></script><!-- End of Silex HEAD tag do not remove --></head>
+
+<body data-silex-id="body-initial" class="body-initial is-not-active all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime" data-silex-type="container-element" style="">
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+<section data-silex-type="container-element" class="container-element editable-style silex-id-1478366444112-1 section-element prevent-resizable fixed fullwidth border-scroll" data-silex-id="silex-id-1478366444112-1" style="">
+        <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1478366444112-0 container-element website-width" data-silex-id="silex-id-1478366444112-0" style="">
+
+
+
+
+
+
+
+        <div data-silex-type="image-element" class="editable-style image-element silex-id-1618932730640-5" data-silex-id="silex-id-1618932730640-5" style=""><img src="../../../../../dropbox/get/test_pardot_generique/assets/logo.png"></div></div>
+    </section><section data-silex-type="container-element" class="container-element editable-style silex-id-1474394621033-3 section-element prevent-resizable page-home-page paged-element" data-silex-id="silex-id-1474394621033-3" style="">
+        
+    <div data-silex-type="container-element" class="editable-style silex-element-content silex-id-1474394621032-2 container-element website-width" data-silex-id="silex-id-1474394621032-2" style="">
+
+
+
+
+
+
+        <div data-silex-type="image-element" class="editable-style image-element silex-id-1619509915720-0" data-silex-id="silex-id-1619509915720-0" style=""><img src="../assets/hero_letters.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1619436998719-0 header" data-silex-id="silex-id-1619436998719-0" style=""><div class="silex-element-content normal"><h1>Between Us Lorem ipsum</h1></div></div></div></section><section data-silex-type="container-element" class="container-element editable-style silex-id-1496148764365-5 section-element prevent-resizable page-home-page paged-element" data-silex-id="silex-id-1496148764365-5" style="">
+        
+    <div data-silex-type="container-element" class="editable-style silex-id-1496148764363-4 container-element silex-element-content website-width" data-silex-id="silex-id-1496148764363-4" style="">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        <div data-silex-type="container-element" class="editable-style container-element silex-id-1619102040111-1" data-silex-id="silex-id-1619102040111-1" style=""><div data-silex-type="image-element" class="editable-style image-element silex-id-1618933327305-6" data-silex-id="silex-id-1618933327305-6" style=""><img src="../assets/icon.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1618933677074-9 style-cards from-bottom delay300" data-silex-id="silex-id-1618933677074-9" title="" style=""><div class="silex-element-content normal">
+                    <h2>Lorem Ipsum</h2>
+
+                        <p>
+                            Ground round ham hock ut leberkas salami. Frankfurter cow lorem laboris reprehenderit flank pork belly.</p>
+
+                </div></div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1619102327508-2" data-silex-id="silex-id-1619102327508-2"><div data-silex-type="image-element" class="editable-style image-element silex-id-1618933338114-7" data-silex-id="silex-id-1618933338114-7" style=""><img src="../assets/icon2.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1619102327509-4 style-cards from-bottom delay300" data-silex-id="silex-id-1619102327509-4" title="" style=""><div class="silex-element-content normal">
+                    <h2>Lorem Ipsum<br></h2>
+
+                        <p>
+                            Ground round ham hock ut leberkas salami. Frankfurter cow lorem laboris reprehenderit flank pork belly.</p>
+
+                </div></div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1619102332203-5" data-silex-id="silex-id-1619102332203-5"><div data-silex-type="image-element" class="editable-style image-element silex-id-1618933376295-8" data-silex-id="silex-id-1618933376295-8" style=""><img src="../assets/icon3.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1619102332203-7 style-cards from-bottom delay300" data-silex-id="silex-id-1619102332203-7" title=""><div class="silex-element-content normal">
+                    <h2>Lorem Ipsum</h2>
+
+                        <p>
+                            Ground round ham hock ut leberkas salami. Frankfurter cow lorem laboris reprehenderit flank pork belly.</p>
+
+                </div></div></div></div></section><div data-silex-type="container-element" class="editable-style section-element silex-id-1617875263486-0 page-home-page paged-element" data-silex-id="silex-id-1617875263486-0" style=""><div data-silex-type="container-element" class="editable-style container-element silex-id-1617875263487-1 silex-element-content website-width prevent-draggable" data-silex-id="silex-id-1617875263487-1" style=""><div data-silex-type="text-element" class="editable-style silex-id-1496136970330-0 text-element header from-bottom delay300" data-silex-id="silex-id-1496136970330-0" style="">
+                <div class="silex-element-content normal">
+                    <h3>Let's talk about your next trip !</h3>
+
+                        <p>
+                            Ground round ham hock ut leberkas salami. Frankfurter cow lorem laboris reprehenderit flank pork belly ut capicola beef shankle bacon labore in. Bresaola fugiat leberkas, doner strip steak anim reprehenderit id sirloin.&nbsp;
+                        </p>
+
+                </div>
+            </div><div data-silex-type="html-element" class="editable-style html-element silex-id-1617882090030-0" data-silex-id="silex-id-1617882090030-0" style=""><div class="silex-element-content"><p>New HTML box</p></div></div></div></div><div data-silex-type="container-element" class="editable-style section-element silex-id-1619785274025-6 page-home-page paged-element" data-silex-id="silex-id-1619785274025-6"><div data-silex-type="container-element" class="editable-style container-element silex-id-1619785274026-7 silex-element-content website-width prevent-draggable" data-silex-id="silex-id-1619785274026-7"><div data-silex-type="text-element" class="editable-style text-element silex-id-1619778107249-5 style-credit-ik2" data-silex-id="silex-id-1619778107249-5" style="" data-silex-href="https://internet2000.net/"><div class="silex-element-content normal"><p>Site conçu et réalisé par Internet 2000</p></div></div></div></div></body></html>
